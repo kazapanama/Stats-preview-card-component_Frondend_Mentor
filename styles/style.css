@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin:0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+}
+
+.bg{
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1110px;
+    max-height: 450px;
+    display:flex;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+h1{
+    color:white;
+    margin-bottom: 35px;
+    font-size:36px;
+}
+
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+    font-size: 15px;
+    padding-right:20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    margin-bottom: 80px;
+}
+
+.left_part{
+    margin-left:70px;
+    margin-right: 90px;
+    margin-top:60px;
+    max-width:570px;
+}
+
+span{
+    color:hsla(0, 0%, 100%, 0.6);
+}
+
+span:first-child{
+    font-size:24px;
+    font-weight: 700; 
+    color:white;
+}
+
+span:last-child(){
+    font-family: Lexend Deca;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#color{
+    color:hsl(277, 64%, 61%);
+    font-size:36px;
+}
+
+.numbers{
+    display: flex;
+    gap:60px;
+}
+
+
+.image{
+    position:relative;
+  display:inline-block;
+    
+}
+
+.image:after{
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+ 
+    background: linear-gradient(to bottom, rgba(176, 93, 225, 0.9) 0%,rgba(176, 93, 225, 0.9) 100%); 
+     mix-blend-mode: multiply;
+  
+}
+
+.img1{
+    display: block;
+    object-fit:cover;
+}
+
+.img2{
+    display:none;
+}
+
+@media screen and (max-width: 700px){
+
+    main{
+        width:100%;
+    height:100%;
+    }
+    
+    .bg{
+        flex-direction: column-reverse;
+        max-width: 330px;
+        max-height: 780px;
+        margin-top:80px;
+        margin-bottom:80px;
+    
+    }
+
+    .left_part{
+        margin-left:35px;
+        margin-right: 35px;
+        margin-top:60px;
+        max-width:570px;
+    }
+
+    h1{
+        font-size: 28px;
+        padding:0;
+        text-align: center;
+    }
+
+    #color{
+        font-size:28px;
+    }
+
+    P{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .numbers{
+        flex-direction: column;
+        margin-bottom:35px;
+        gap:35px;
+        align-items: center;
+    }
+   
+   .img1{
+       display: none;
+       margin:0,auto;
+   }
+
+   .img2{
+    display: block;
+    object-fit:cover;
+    width: 330px;
+    height: 240px;
+    margin:0,auto;
+}
+
+}
